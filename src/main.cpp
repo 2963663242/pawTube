@@ -8,7 +8,7 @@
 
 int main(int argc,char ** argv){
 	
-	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true); // ÉèÖÃ¸ßDPI
+	QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true); // è®¾ç½®é«˜DPI
 	SingleApplication a(argc, argv);
 	QCoreApplication::setOrganizationName("LuckyDog Technology Limited.");
 	QCoreApplication::setApplicationName("iTubeGo");
