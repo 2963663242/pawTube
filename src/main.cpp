@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <QIcon>
 #include "config.h"
-
+#include "MainWindow.h"
 
 int main(int argc,char ** argv){
 	
@@ -25,7 +25,8 @@ int main(int argc,char ** argv){
 	preConfig();
 	createLogPath();
 
+	MainWindow * mainWindow = new MainWindow;
 
-	return 0;
+	return a.exec();
 }
 
