@@ -1,4 +1,9 @@
 
+if(MSVC)
+	set(WINDOWLIB 
+		Dwmapi.lib
+		)
+endif()
 
 find_package(Qt5 COMPONENTS Widgets Network REQUIRED)
 find_package(Qt5Network)
@@ -15,4 +20,6 @@ set_target_properties(${PROJECT_NAME} PROPERTIES VS_DEBUGGER_WORKING_DIRECTORY "
 target_compile_options(${PROJECT_NAME} PUBLIC "/utf-8")
 
 add_definitions(-DUNICODE -D_UNICODE)
-target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Network)
+
+# 链接动态库
+target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Network ${WINDOWLIB})
