@@ -15,5 +15,7 @@ if exist %CMAKE_PREFIX_PATH% (
 	cmake -S %WORKSPACE% -B %BUILD_DIR%
 )
 
-cmake --build %BUILD_DIR% --config Release
+if not %BUILD_FLAG% (
+	cmake --build %BUILD_DIR% --config Release
+)
 
