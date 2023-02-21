@@ -4,7 +4,7 @@ class MainWindow :public CFramelessWindow {
 	Q_OBJECT
 public:
 	MainWindow(QWidget* parent = nullptr);
-	
+	void sub_46FD00();
 private:
 	int m48=0;
 	int m4c = 0;

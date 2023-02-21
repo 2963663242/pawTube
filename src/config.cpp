@@ -3,7 +3,7 @@
 #include <QSettings>
 #include <QDir>
 #include <QStandardPaths>
-
+#include "LanguageSettings.h"
 
 QString createAppPath() {
 	QDir dir(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation));
@@ -176,3 +176,6 @@ void preConfig() {
 
 
 }
+
+
+
