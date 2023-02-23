@@ -9,6 +9,6 @@ MainWindow::MainWindow(QWidget* parent):CFramelessWindow(parent) {
 void MainWindow::sub_46FD00()
 {
 	LanguageSettings* settings =  getLanSettings();
+	QObject::connect(settings, &LanguageSettings::languageChanged, settings, 0);
 
-	QObject::connect()
 }
